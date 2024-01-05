@@ -12,7 +12,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 const Footer = () => {
   return (
     <>
-      <div className="p-5 border">
+      <div className="p-5 border ">
         <div className=" text-center pb-3 pt-4 ">
           <a target="_blank" href="https://github.com/OUsoben">
             <FontAwesomeIcon icon={faGithub} size="2x" />
@@ -34,9 +34,7 @@ const Footer = () => {
           </a>
           <a
             target="_blank"
-            href="mailto:ousoben20@gmail.comsubject = Feedback&body = Message"
-          >
-        
+            href="mailto:ousoben20@gmail.com"> 
             <FontAwesomeIcon className="ms-4" icon={faEnvelope} size="2x" />
           </a>
         </div>

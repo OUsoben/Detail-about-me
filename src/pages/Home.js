@@ -31,7 +31,7 @@ const Home = () => {
                 />
               </span>
             </h1>
-            <p>
+            <p className="fs-5">
               Hi, I'm Ou Soben.A passionate Front-end React Developer based in
               Phnom penh.
             </p>
@@ -71,18 +71,20 @@ const Home = () => {
               alt="My photo"
             />
             <h3 className="fw-bold pt-3  ">Ou Soben</h3>
-            <hr />
+            <hr style={{width: "100px"}} />
             <p className="">It All Begins With A Passion.</p>
           </div>
 
           <div
-            className=" col-xl-5 order-xl-2 
+            className=" col-xl-8 order-xl-2 
               p-5 "
-          >
-            <p className="">
+          >  
+             <h4 className="fw-bold"></h4>
+            <p className="fs-5">
               My name's Ou soben. I'm 21 years old. I am from Phnom Penh,and I'm
               Currently a third-year student pursuing a Bachelor's Degree in
-              Computer Science at Royal University of Phnom Penh.{" "}
+              Computer Science at <span className="fw-bold">Royal University of Phnom Penh.</span> {" "} with a passion for
+Design and Web Development. 
             </p>
           </div>
         </div>
