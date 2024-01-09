@@ -71,7 +71,7 @@ const Home = () => {
               alt="My photo"
             />
             <h3 className="fw-bold pt-3  ">Ou Soben</h3>
-            <hr style={{width: "100px"}} />
+            <hr className="text-danger" style={{width: "100px"}} />
             <p className="">It All Begins With A Passion.</p>
           </div>
 

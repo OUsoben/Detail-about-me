@@ -1,0 +1,44 @@
+.all-steps{
+    text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.step {
+     height: 40px;
+  width: 40px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #6a1b9a;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1
+}
+
+
+.step.finish {
+ color: #fff;
+ background: #6a1b9a;
+ opacity: 1;
+
+}
+
+
+
+.all-steps {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px
+}
+
