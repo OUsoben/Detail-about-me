@@ -9,7 +9,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const {t} =useTranslation()
   return (
     <>
       <div className="p-5 border ">
@@ -40,12 +42,12 @@ const Footer = () => {
         </div>
         <div className="allrights text-center">
           <p className="p-0">
-            © 2023 All Rights Reserved. Design by{"  "}
+            {t("footer.p1")}
             <span
               style={{ fontWeight: "bolder" }}
               className=" text-weight-bold"
             >
-              Ou Soben
+            {t("footer.h1")}
             </span>
           </p>
         </div>

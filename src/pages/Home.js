@@ -4,24 +4,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHand } from "@fortawesome/free-regular-svg-icons";
 import {
   faBootstrap,
-  faCss3,
   faCss3Alt,
-  faGithub,
   faHtml5,
   faJs,
   faReact,
-  faTelegram,
+
 } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from 'react-i18next';
+import i18n from "i18next"
 const Home = () => {
+  const {t} = useTranslation()
   return (
     <>
       <section className="container">
         <div className="row pt-5 ">
           <div className=" col-xl-6 pt-5 mt-5 p-5 ps-5 col-lg-5">
             <h1 className=" fw-bold">
-              Front-End React
+            {t("homepage.h2")}
               <br />
-              Developer
+              {t("homepage.h1")}
               <span className="ms-3">
                 <img
                   style={{ width: "40px" }}
@@ -32,11 +33,10 @@ const Home = () => {
               </span>
             </h1>
             <p className="fs-5">
-              Hi, I'm Ou Soben.A passionate Front-end React Developer based in
-              Phnom penh.
+            {t("homepage.p1")}
             </p>
             <div className="">
-              <p className="fw-bold">Skills</p>
+              <p className="fw-bold">{t("homepage.p2")}</p>
               <span className="">
                 <FontAwesomeIcon icon={faHtml5} color="orange" size="2x" />
                 <FontAwesomeIcon
@@ -70,9 +70,9 @@ const Home = () => {
               src={require("../images/img-2.png")}
               alt="My photo"
             />
-            <h3 className="fw-bold pt-3  ">Ou Soben</h3>
+            <h3 className="fw-bold pt-3  ">{t("homepage.p7")}</h3>
             <hr className="text-danger" style={{width: "100px"}} />
-            <p className="">It All Begins With A Passion.</p>
+            <p className="">{t("homepage.p6")}</p>
           </div>
 
           <div
@@ -81,10 +81,7 @@ const Home = () => {
           >  
              <h4 className="fw-bold"></h4>
             <p className="fs-5">
-              My name's Ou soben. I'm 21 years old. I am from Phnom Penh,and I'm
-              Currently a third-year student pursuing a Bachelor's Degree in
-              Computer Science at <span className="fw-bold">Royal University of Phnom Penh.</span> {" "} with a passion for
-Design and Web Development. 
+            {t("homepage.p3")} <span className="fw-bold">{t("homepage.p4")}</span> {" "} {t("homepage.p5")}
             </p>
           </div>
         </div>

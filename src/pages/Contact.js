@@ -2,10 +2,11 @@ import React from 'react'
 import "../styles/contect.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faGithub, faInstagram, faLinkedinIn, faTelegram } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faEnvelopeCircleCheck } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faEnvelopeCircleCheck, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
-  
+  const {t} =useTranslation()
   return (
     
     <>
@@ -37,13 +38,20 @@ const Contact = () => {
             <FontAwesomeIcon icon={faEnvelopeCircleCheck}  />
           </a>
          </span>
+         <span class="step"> <a
+         
+            href="tel:069395136"> 
+            <FontAwesomeIcon icon={faPhone}  />
+          </a>
+         </span>
+         
         
                 
                 </div>
 
               
                 <div class="thanks-message text-center" id="text-message"> <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4"/>
-                    <h3>Thank you for your Watching!</h3> Thanks for you view my personal information. It's let you to know me more
+                    <h3>{t("contect.p1")}</h3> {t("contect.p2")}
                 </div>
                
             </form>
