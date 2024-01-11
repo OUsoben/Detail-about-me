@@ -43,7 +43,7 @@ function NavBar() {
 
       </Navbar.Collapse>
 
-      <div className="flag col-lg-1 col-md-1 col-sm-2 col-3  ms-auto ">
+      <div className="flag col-lg-1 col-md-2 col-2 ms-auto ">
         {
 
 
